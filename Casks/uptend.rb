@@ -4,11 +4,11 @@ cask "uptend" do
 
   url "https://github.com/andre28abr/Uptend/releases/download/v#{version}/Uptend.dmg"
   name "Uptend"
-  desc "Configure and maintain the Mac and audit Linux servers"
+  desc "Maintenance toolkit and Linux server auditor"
   homepage "https://github.com/andre28abr/Uptend"
 
-  depends_on macos: ">= :sonoma"
   depends_on arch: :arm64
+  depends_on macos: :sonoma
 
   app "Uptend.app"
 
